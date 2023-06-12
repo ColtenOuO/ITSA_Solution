@@ -26,7 +26,6 @@ signed main(void)
     cin >> n;
     
     init();
-    int c = 0;
     for(int i=0;i<n;i++) cin >> id[i] >> w[ id[i] - 'A' ] , sum += w[ id[i] - 'A' ];
     for(int i=0;i<26;i++)
     {
@@ -38,13 +37,9 @@ signed main(void)
             ans *= 100;
             ans = (int)ans;
             ans /= 100;
-            
-            if( c != 0 ) cout << "\n";
-            c = 1;
 
-            cout << fixed << setprecision(2) << (char)('A'+i) << "(" << ans  << ")";
+            cout << fixed << setprecision(2) << (char)('A'+i) << "(" << ans  << ")\n";
         }
     }
-
     return 0;
 }
