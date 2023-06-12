@@ -5,7 +5,7 @@
 using namespace std;
 
 char id[21];
-int w[21];
+int w[26];
 
 void init()
 {
@@ -42,4 +42,5 @@ signed main(void)
         }
     }
     return 0;
+
 }
